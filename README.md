@@ -128,6 +128,12 @@ Obviously use it wisely, a wrong command could or usage can freak the usage of i
 npx prisma migrate dev --name init
 ```
 
+To visualize the database schemas use the next command to enhance the visibility without us
+
+```bash
+npx prisma studio
+```
+
 If needed some of this schemas it can use multiple schemas for further configurations don't forget to read
 [How to use Prisma ORM with multiple database schemas](https://www.prisma.io/docs/orm/prisma-schema/data-model/multi-schema)
 
