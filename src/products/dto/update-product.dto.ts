@@ -1,4 +1,6 @@
+import { Product } from '@prisma/client';
 import { PartialType } from '@nestjs/mapped-types';
-import { CreateProductDto } from './create-product.dto';
 
-export class UpdateProductDto extends PartialType(CreateProductDto) {}
+// export type UpdateProductDto =  Omit<Product, 'createdAt'>;
+
+export class UpdateProductDto {}

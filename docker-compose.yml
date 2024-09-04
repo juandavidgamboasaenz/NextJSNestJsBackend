@@ -1,0 +1,14 @@
+#version: '3.8'
+#
+
+
+#services:
+#  db:
+#    image: busybox #Lightweight image for managing tha database file
+#    volumes:
+#      - ./data:/data #Persistent storage for the database file
+#    command: sh -c "touch /data/mydb.sqlite && chmod 777 /data/mydb.sqlite && tail -f /dev/null" # Create the database file and keep the container running
+#    restart: always # Ensure the container restarts automatically
+#
+#  api:
+#    build: ./ #
