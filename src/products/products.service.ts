@@ -10,13 +10,13 @@ export class ProductsService {
   }
 
   create(createProductDto: CreateProductDto) {
-    this.prismaService.product.create({
+    return this.prismaService.product.create({
       data: createProductDto
     })
   }
 
   findAll() {
-  return  this.prismaService.product.findMany()
+  return this.prismaService.product.findMany()
   }
 
   findOne(id: number) {
